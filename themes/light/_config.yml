@@ -1,0 +1,14 @@
+menu:
+  Home: /
+  Archives: archives
+  Rss: /atom.xml
+
+widgets:
+- search
+- category
+- tag
+
+excerpt_link: Read More
+
+google_analytics:
+rss: /atom.xml
