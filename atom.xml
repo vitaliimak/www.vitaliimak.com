@@ -6,7 +6,7 @@
   <link href="https://www.vitaliimak.com/atom.xml" rel="self"/>
   
   <link href="https://www.vitaliimak.com/"/>
-  <updated>2022-07-10T18:57:25.605Z</updated>
+  <updated>2022-07-16T11:58:11.698Z</updated>
   <id>https://www.vitaliimak.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Fix git error &quot;fatal: CRLF would be replaced by LF in FILE&quot;</title>
+    <link href="https://www.vitaliimak.com/2022/07/16/fix-git-error-fatal-crlf-would-be-replaced-by-lf-in-file/"/>
+    <id>https://www.vitaliimak.com/2022/07/16/fix-git-error-fatal-crlf-would-be-replaced-by-lf-in-file/</id>
+    <published>2022-07-16T11:45:24.000Z</published>
+    <updated>2022-07-16T11:58:11.698Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Error"><a href="#Error" class="headerlink" title="Error:"></a>Error:</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add --all</span><br><span class="line">fatal: CRLF would be replaced by LF in src/main.c</span><br></pre></td></tr></table></figure><h2 id="Fix"><a href="#Fix" class="headerlink" title="Fix:"></a>Fix:</h2><ol><li>Replace CRLF symbols by LF</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find ./src/*.c -exec sed -i &#x27;s/\r$//&#x27; &#123;&#125; +</span><br></pre></td></tr></table></figure><p>Source: <a href="https://stackoverflow.com/questions/20168639/git-commit-get-fatal-error-fatal-crlf-would-be-replaced-by-lf-in">StackOverflow</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Error&quot;&gt;&lt;a href=&quot;#Error&quot; class=&quot;headerlink&quot; title=&quot;Error:&quot;&gt;&lt;/a&gt;Error:&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;g</summary>
+      
+    
+    
+    
+    
+    <category term="git" scheme="https://www.vitaliimak.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>How to update the custom Android ROM</title>
     <link href="https://www.vitaliimak.com/2022/07/10/how-to-update-the-custom-android-rom/"/>
     <id>https://www.vitaliimak.com/2022/07/10/how-to-update-the-custom-android-rom/</id>
     <published>2022-07-10T16:49:50.000Z</published>
-    <updated>2022-07-10T18:57:25.605Z</updated>
+    <updated>2022-07-16T11:58:11.698Z</updated>
     
     <content type="html"><![CDATA[<ol><li>Download the ROM zip file on a computer</li><li>Connect the phone to the computer, reboot to recovery, and install the ROM<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">adb devices</span><br><span class="line">adb reboot recovery</span><br><span class="line">adb sideload ROM.zip</span><br></pre></td></tr></table></figure></li></ol><p>Installer message <code>serving: &#39;ROM.zip&#39;  (~47%)    adb: failed to read command: Success</code> means that everything is okay.</p><p><a href="https://www.reddit.com/r/LineageOS/comments/dt2et4/adb_failed_to_read_command_success/">Reddit - adb: failed to read command: Success</a></p><blockquote><p> That’s an ADB issue, nothing is wrong with the device, cable, PC or the installation process.<br>If I remember correctly (from a discussion long ago), Google’s ROMs are transferred about 2.2 times across the sideload. To make the progress bar add up to 100%, they said “2.2 times the file size equals 100%”. Our ZIPs are transferred just once, so the final progress is at about 47% with a success. The xfer seems to show the transferred data compared to the file size. Ours clocks in at x1.00 or x1.01, while Google’s is about x2.something.</p></blockquote><ol start="3"><li>Reboot to the system</li><li>Install the <a href="https://magisk.me/apk/"><strong>Magisk</strong></a> app</li><li>Reboot to recovery again, and install <a href="https://magisk.me/zip/"><strong>Magisk</strong></a> zip<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb reboot recovery</span><br><span class="line">adb sideload Magisk.zip</span><br></pre></td></tr></table></figure></li><li>Reboot to the system</li><li>Check <strong>SafetyNet</strong></li></ol>]]></content>
     
