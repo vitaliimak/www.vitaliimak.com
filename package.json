@@ -1,36 +1,25 @@
 {
-  "name": "vitaliimak.github.io",
-  "version": "0.0.1",
+  "name": "www.vitaliimak.com",
+  "version": "1.0.0",
   "private": true,
   "description": "Personal web site",
-  "homepage": "https://vitaliimak.com",
-  "author": "Vitalii Makarchenkov <mail@vitaliimak.com> (https://vitaliimak.com/)",
-  "license": "MIT",
-  "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server",
-    "post": "hexo new page --path `date +'%Y-%m-%d'`"
+  "homepage": "https://www.vitaliimak.com",
+  "author": {
+    "name": "Vitalii Makarchenkov",
+    "email": "mail@vitaliimak.com",
+    "url": "https://www.vitaliimak.com/"
   },
-  "hexo": {
-    "version": "6.2.0"
+  "license": "MIT",
+  "main": "_site/index.html",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "post": "hexo new page --path `date +'%Y-%m-%d'`"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitaliimak/vitaliimak.github.io.git"
+    "url": "git+https://github.com/vitaliimak/www.vitaliimak.com.git"
   },
-  "dependencies": {
-    "hexo": "^6.2.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-feed": "3.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^5.0.0",
-    "hexo-renderer-stylus": "^2.1.0",
-    "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^0.0.3"
+  "devDependencies": {
+    "@11ty/eleventy": "1.0.2"
   }
 }

@@ -1,8 +1,15 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
+# Generic
 node_modules/
-public/
-.deploy*/
-_multiconfig.yml
+Thumbs.db
+.DS_Store
+.env
+.log
+.cache
+.vscode
+
+# App-specific
+cache
+_site/
+_generated*
+node-supporters/
+src/_data/builtwith/
