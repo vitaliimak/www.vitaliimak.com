@@ -5,9 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "scaffolds/**"
-      - "source/**"
-      - "themes/**"
+      - "src/**"
 
 jobs:
   pages:
