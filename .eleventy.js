@@ -17,10 +17,10 @@ module.exports = function(config) {
       input: "src",
       output: "_site"
     },
-    passthroughFileCopy: true,
+    markdownTemplateEngine: 'ejs',
     templateFormats: [
             'md',
-            'njk',
+            'ejs',
         ],
   }
 };

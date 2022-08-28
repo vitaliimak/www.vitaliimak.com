@@ -5,7 +5,7 @@ tags:
 - android
 - adb
 - post
-layout: layouts/post.njk
+layout: layouts/post.ejs
 ---
 
 1. Download the ROM zip file on a computer

@@ -1,0 +1,10 @@
+<!-- {% include 'layouts/header.njk' %} -->
+<main>
+    {# {% include "layouts/article.njk" %} #}
+    <h1 class="post__title"><%= title %></h1>
+    <p class="post__date"><%= date | (readableDate) => readableDate %></p>
+    <div>
+        {{ content | safe }}
+    </div>
+</main>
+<!-- {% include 'layouts/footer.njk' %} -->
