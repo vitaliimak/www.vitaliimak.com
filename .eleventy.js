@@ -1,4 +1,5 @@
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
+const CleanCSS = require("clean-css");
 
 module.exports = function(config) {
 
@@ -11,6 +12,14 @@ module.exports = function(config) {
             day: 'numeric',
         });
     });
+
+  config.addFilter("cssmin", function(code) {
+    if(process.env.NODE_ENV === "production") {
+      return new CleanCSS({}).minify(code).styles;
+    }
+
+    return code;
+  });
 
   config.addCollection('postsReversed', function(collection) {
     return collection.getFilteredByTag('post').reverse();

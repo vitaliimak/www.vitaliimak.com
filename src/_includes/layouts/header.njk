@@ -1,8 +1,12 @@
 <header>
-    <div class="container">
-        <a href="/">{{ config.siteName }}</a>
-        <nav>
-            <ul>
+    <div>
+        <nav class="top-nav">
+            <a href="/">{{ config.siteName }}</a>
+            <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/archive">Archive</a></li>

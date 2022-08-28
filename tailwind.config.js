@@ -3,7 +3,10 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
   },
   plugins: [],
+  purge: ['./_site/**/*.{js,html,css,md,svg}'],
 }
