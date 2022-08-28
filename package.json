@@ -14,7 +14,7 @@
   "scripts": {
     "build": "npx @11ty/eleventy && cp src/CNAME _site/",
     "serve": "npx @11ty/eleventy --serve",
-    "post": "hexo new page --path `date +'%Y-%m-%d'`"
+    "post": "./tools/create-post.sh"
   },
   "repository": {
     "type": "git",
