@@ -23,27 +23,7 @@
 <main>
     <article>
     
-        <h1><a href="/content/blog/2022-07-16/">Fix git error &quot;fatal: CRLF would be replaced by LF in FILE&quot;</a></h1>
-        <p>July 16, 2022</p>
-        <div>
-            <h2>Error:</h2>
-<pre><code>git add --all
-fatal: CRLF would be replaced by LF in src/main.c
-</code></pre>
-<h2>Fix:</h2>
-<ol>
-<li>Remove CR symbol from CRLF</li>
-</ol>
-<pre><code>find ./src/*.c -exec sed -i 's/\r$//' {} +
-</code></pre>
-<p>Source: <a href="https://stackoverflow.com/questions/20168639/git-commit-get-fatal-error-fatal-crlf-would-be-replaced-by-lf-in">StackOverflow</a></p>
-
-        </div>
-    
-</article>
-<article>
-    
-        <h1><a href="/content/blog/2022-07-10/">How to update the custom Android ROM</a></h1>
+        <h1>How to update the custom Android ROM</h1>
         <p>July 10, 2022</p>
         <div>
             <ol>

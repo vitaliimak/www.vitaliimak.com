@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vitalii&#39;s Home</title>
+    </head>
+    <body>
+        <header>
+    <div class="container">
+        <a href="/">Vitalii&#39;s Home</a>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/archive">Archive</a></li>
+                <li><a href="/atom.xml">RSS</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <article>
+    
+        <h1>Fix git error &quot;fatal: CRLF would be replaced by LF in FILE&quot;</h1>
+        <p>July 16, 2022</p>
+        <div>
+            <h2>Error:</h2>
+<pre><code>git add --all
+fatal: CRLF would be replaced by LF in src/main.c
+</code></pre>
+<h2>Fix:</h2>
+<ol>
+<li>Remove CR symbol from CRLF</li>
+</ol>
+<pre><code>find ./src/*.c -exec sed -i 's/\r$//' {} +
+</code></pre>
+<p>Source: <a href="https://stackoverflow.com/questions/20168639/git-commit-get-fatal-error-fatal-crlf-would-be-replaced-by-lf-in">StackOverflow</a></p>
+
+        </div>
+    
+</article>
+
+</main>
+<footer>
+    <p>&copy; 2022 Vitalii Makarchenkov</p>
+</footer>
+
+
+    </body>
+</html>
