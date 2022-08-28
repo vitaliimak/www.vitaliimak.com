@@ -1,10 +1,11 @@
 ---
 title: How to update the custom Android ROM
-# permalink: /How_to/
 date: 2022-07-10 19:49:50
 tags:
 - android
 - adb
+- post
+layout: layouts/post.njk
 ---
 
 1. Download the ROM zip file on a computer
@@ -14,7 +15,6 @@ adb devices
 adb reboot recovery
 adb sideload ROM.zip
 ```
-
 Installer message `serving: 'ROM.zip'  (~47%)    adb: failed to read command: Success` means that everything is okay.
 
 [Reddit - adb: failed to read command: Success](https://www.reddit.com/r/LineageOS/comments/dt2et4/adb_failed_to_read_command_success/)

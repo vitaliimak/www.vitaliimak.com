@@ -3,6 +3,8 @@ title: "Fix git error \"fatal: CRLF would be replaced by LF in FILE\""
 date: 2022-07-16 14:45:24
 tags:
 - git
+- post
+layout: layouts/post.njk
 ---
 
 ## Error:

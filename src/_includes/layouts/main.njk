@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+{% include 'layouts/header.njk' %}
+<main>
+        {% for article in collections.postsReversed -%}
+            {% include "layouts/article.njk" %}
+        {%- endfor %}
+</main>
+{% include 'layouts/footer.njk' %}

@@ -1,0 +1,7 @@
+<article>
+    <h1><a href="{{ article.url }}">{{ article.data.title }}</a></h1>
+    <p>{{ article.data.date | readableDate }}</p>
+    <div>
+        {{ article.templateContent | safe }}
+    </div>
+</article>
