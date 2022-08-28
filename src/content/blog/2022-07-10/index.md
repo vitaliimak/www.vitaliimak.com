@@ -1,5 +1,6 @@
 ---
 title: How to update the custom Android ROM
+permalink: "/blog/{{ title | slugify }}/"
 date: 2022-07-10 19:49:50
 tags:
 - android

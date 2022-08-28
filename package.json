@@ -21,6 +21,7 @@
     "url": "git+https://github.com/vitaliimak/www.vitaliimak.com.git"
   },
   "devDependencies": {
-    "@11ty/eleventy": "1.0.2"
+    "@11ty/eleventy": "1.0.2",
+    "@sindresorhus/slugify": "2.1.0"
   }
 }
