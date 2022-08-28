@@ -1,4 +1,8 @@
+const rssPlugin = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function(config) {
+
+	config.addPlugin(rssPlugin);
 
   config.addFilter('readableDate', (value) => {
         return value.toLocaleString('en', {
