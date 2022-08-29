@@ -12,9 +12,10 @@
   "license": "MIT",
   "main": "_site/index.html",
   "scripts": {
-    "build": "npx @11ty/eleventy && cp src/CNAME _site/",
+    "build": "npx @11ty/eleventy && cp src/CNAME _site/ && npm run tailwind:build",
     "serve": "npx @11ty/eleventy --serve & npm run tailwind:serve",
     "tailwind:serve": "npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css",
     "post": "./tools/create-post.sh"
   },
   "repository": {
