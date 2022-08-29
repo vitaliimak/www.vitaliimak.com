@@ -5,12 +5,11 @@ date: 2022-07-16 14:45:24
 tags:
 - git
 - post
-layout: layouts/post.njk
 ---
 
 ## Error:
 
-```
+```bash
 git add --all
 fatal: CRLF would be replaced by LF in src/main.c
 ```
@@ -19,7 +18,7 @@ fatal: CRLF would be replaced by LF in src/main.c
 
 1. Remove CR symbol from CRLF
 
-```
+```bash
 find ./src/*.c -exec sed -i 's/\r$//' {} +
 ```
 

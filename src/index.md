@@ -1,4 +1,4 @@
 ---
-layout: layouts/main.njk
-title: Test1
+layout: home
+title: Vitalii's Home
 ---
