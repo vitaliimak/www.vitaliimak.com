@@ -206,7 +206,8 @@ pre::-webkit-scrollbar-thumb {
 
 pre,
 code {
-  font-family: 'Inconsolata', monospace;
+  /* TODO  */
+  font-family: 'Fira Code', monospace;
 }
 
 pre code {
