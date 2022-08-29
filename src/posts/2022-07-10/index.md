@@ -6,12 +6,11 @@ tags:
 - android
 - adb
 - post
-layout: layouts/post.njk
 ---
 
 1. Download the ROM zip file on a computer
 2. Connect the phone to the computer, reboot to recovery, and install the ROM
-```
+```bash
 adb devices
 adb reboot recovery
 adb sideload ROM.zip

@@ -13,3 +13,4 @@ _site/
 _generated*
 node-supporters/
 src/_data/builtwith/
+public/

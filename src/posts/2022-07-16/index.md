@@ -5,7 +5,6 @@ date: 2022-07-16 14:45:24
 tags:
 - git
 - post
-layout: layouts/post.njk
 ---
 
 ## Error:
