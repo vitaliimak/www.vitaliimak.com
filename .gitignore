@@ -1,0 +1,16 @@
+# Generic
+node_modules/
+Thumbs.db
+.DS_Store
+.env
+.log
+.cache
+.vscode
+
+# App-specific
+cache
+_site/
+_generated*
+node-supporters/
+src/_data/builtwith/
+public/

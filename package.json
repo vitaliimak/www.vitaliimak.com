@@ -1,0 +1,25 @@
+{
+  "name": "www.vitaliimak.com",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Personal website",
+  "homepage": "https://www.vitaliimak.com",
+  "author": {
+    "name": "Vitalii Makarchenkov",
+    "email": "mail@vitaliimak.com",
+    "url": "https://www.vitaliimak.com/"
+  },
+  "license": "MIT",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "clean": "rm --recursive --force ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliimak/www.vitaliimak.com.git"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "1.0.2",
+    "@11ty/eleventy-plugin-rss": "1.2.0"
+  }
+}

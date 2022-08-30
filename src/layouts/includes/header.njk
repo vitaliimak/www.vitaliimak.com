@@ -1,0 +1,28 @@
+<header>
+    <div>
+        <a href="/">{{ site.name }}</a>
+
+    </div>
+    {% if site.headerLinks %}
+        <nav>
+            <ul>
+                {% for link in site.headerLinks %}
+                    {% set currentAttribute = '' %}
+                    {% set externalAttribute = '' %}
+
+                    {% if link.external %}
+                        {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+                    {% endif %}
+
+                    {% if page.url == link.url %}
+                        {% set currentAttribute = 'aria-current="page"' %}
+                    {% endif %}
+
+                    <li>
+                        <a href="{{ link.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ link.text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    {% endif %}
+</header>
