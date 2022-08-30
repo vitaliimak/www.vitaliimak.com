@@ -1,5 +1,5 @@
-const rssPlugin = require("@11ty/eleventy-plugin-rss");
-const markdownIt = require("markdown-it");
+const rssPlugin = require('@11ty/eleventy-plugin-rss');
+const markdownIt = require('markdown-it');
 
 module.exports = function(config) {
   config.addPlugin(rssPlugin);
@@ -21,7 +21,7 @@ module.exports = function(config) {
 
     return defaultRender(tokens, idx, options, env, self);
   };
-  config.setLibrary("md", md);
+  config.setLibrary('md', md);
 
   config.addFilter('readableDate', (value) => {
       return value.toLocaleString('en', {

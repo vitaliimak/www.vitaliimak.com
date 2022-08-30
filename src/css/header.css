@@ -1,0 +1,57 @@
+.site_navigation li {
+  list-style-type: none;
+  display: inline;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #999;
+  line-height: 1
+}
+
+header .header {
+  font-size: 160%;
+}
+
+header h2 {
+  font-size: 120%;
+}
+
+header a,
+header a:visited,
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited,
+h5 a,
+h5 a:visited,
+h6 a,
+h6 a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+header a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: none;
+  color: #f80;
+}
+
+header nav {
+  padding: 10px 0;
+  text-align: right;
+}
+
+header nav ul li a {
+  padding-left: 15px;
+}

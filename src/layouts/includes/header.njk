@@ -1,10 +1,9 @@
-<header>
+<header class="site_header">
     <div>
-        <a href="/">{{ site.name }}</a>
-
+        <a class="site_link" href="/">{{ site.name }}</a>
     </div>
     {% if site.headerLinks %}
-        <nav>
+        <nav class="site_navigation">
             <ul>
                 {% for link in site.headerLinks %}
                     {% set currentAttribute = '' %}

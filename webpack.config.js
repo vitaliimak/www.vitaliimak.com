@@ -5,7 +5,7 @@ const isDev = process.env.ELEVENTY_ENV === 'development';
 
 module.exports = {
   entry: [
-    path.resolve(__dirname, 'src', 'css', 'style.css'),
+    path.resolve(__dirname, 'src', 'css', 'index.css'),
   ],
   output: {
     path: path.resolve(__dirname, 'public', 'assets'),
@@ -32,7 +32,7 @@ module.exports = {
       },
     ]},
 
-    plugins: [
+  plugins: [
     new MiniCssExtractPlugin({ filename: `style.css` }),
   ],
 };

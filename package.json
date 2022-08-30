@@ -14,6 +14,9 @@
     "serve": "npm run dev:assets & npm run dev:site",
     "dev:assets": "env ELEVENTY_ENV=development webpack --mode development --watch",
     "dev:site": "env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "build": "npm run clean && npm run build:assets && npm run build:site",
+    "build:assets": "env ELEVENTY_ENV=production webpack --mode production",
+    "build:site": "env ELEVENTY_ENV=production eleventy",
     "clean": "rm --recursive --force ./public"
   },
   "repository": {
