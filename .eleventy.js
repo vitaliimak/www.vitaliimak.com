@@ -3,6 +3,8 @@ const rssPlugin = require("@11ty/eleventy-plugin-rss");
 module.exports = function(config) {
   config.addPlugin(rssPlugin);
 
+  config.addPassthroughCopy({ 'src/images': 'images' });
+
   return {
     dir: {
       input: 'src',
