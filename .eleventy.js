@@ -23,6 +23,25 @@ module.exports = function(config) {
   };
   config.setLibrary("md", md);
 
+  config.addFilter('readableDate', (value) => {
+      return value.toLocaleString('en', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      });
+    });
+
+  config.addFilter('pageTags', (tags) => {
+    const generalTags = ['post', 'posts'];
+
+    return tags
+      .toString()
+      .split(',')
+      .filter((tag) => {
+        return !generalTags.includes(tag);
+      });
+  });
+
   return {
     dir: {
       input: 'src',
