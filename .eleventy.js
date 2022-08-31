@@ -1,8 +1,10 @@
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const markdownIt = require('markdown-it');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(config) {
   config.addPlugin(rssPlugin);
+  config.addPlugin(syntaxHighlight);
 
   config.addPassthroughCopy({ 'src/images': 'images' });
 
