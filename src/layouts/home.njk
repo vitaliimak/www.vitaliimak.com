@@ -1,8 +1,13 @@
 ---
 layout: base
+pagination:
+    data: collections.posts
+    size: 3
+    reverse: true
+    alias: posts
 ---
 <ul class="article-list">
-    {% for post in collections.posts | reverse -%}
+    {% for post in pagination.items -%}
         <li class="article-item">
             <div class="article-date">{{ post.data.date | readableDate }}</div>
             <div class="article-title">
@@ -11,3 +16,4 @@ layout: base
         </li>
     {%- endfor %}
 </ul>
+{% include "pagination.njk" %}

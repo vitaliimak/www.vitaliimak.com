@@ -61,15 +61,7 @@ td {
 
 
 
-ul.pagination {
-  list-style-type: none;
-  text-align: center
-}
 
-li.page-item {
-  display: inline;
-  padding-right: 15px
-}
 
 svg.permalink {
   color: #666;
