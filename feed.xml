@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://www.vitaliimak.com">
+  <title>Vitalii&#39;s Personal Website</title>
+  <subtitle></subtitle>
+  <link href="https://www.vitaliimak.com/feed.xml" rel="self"/>
+  <link href="https://www.vitaliimak.com/"/>
+  <updated>2022-07-16T14:45:24Z</updated>
+  <id>https://www.vitaliimak.com</id>
+  <author>
+    <name>Vitalii Makarchenkov</name>
+    <email>mail@vitaliimak.com</email>
+  </author>
+    <entry>
+      <title>Fix git error &quot;fatal: CRLF would be replaced by LF in FILE&quot;</title>
+      <link href="/posts/fix-git-error-fatal-crlf-would-be-replaced-by-lf-in-file/"/>
+      <updated>2022-07-16T14:45:24Z</updated>
+      <id>/posts/fix-git-error-fatal-crlf-would-be-replaced-by-lf-in-file/</id>
+      <content xml:lang="en" type="html">&lt;h2&gt;Error:&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--all&lt;/span&gt;&lt;br /&gt;fatal: CRLF would be replaced by LF &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; src/main.c&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Fix:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Remove CR symbol from CRLF&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; ./src/*.c &lt;span class=&quot;token parameter variable&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;s/\r$//&#39;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; +&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://stackoverflow.com/questions/20168639/git-commit-get-fatal-error-fatal-crlf-would-be-replaced-by-lf-in&quot; target=&quot;_blank&quot;&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>How to update the custom Android ROM</title>
+      <link href="/posts/how-to-update-the-custom-android-rom/"/>
+      <updated>2022-07-10T19:49:50Z</updated>
+      <id>/posts/how-to-update-the-custom-android-rom/</id>
+      <content xml:lang="en" type="html">&lt;ol&gt;
+&lt;li&gt;Download the ROM zip file on a computer&lt;/li&gt;
+&lt;li&gt;Connect the phone to the computer, reboot to recovery, and install the ROM&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;adb devices&lt;br /&gt;adb &lt;span class=&quot;token function&quot;&gt;reboot&lt;/span&gt; recovery&lt;br /&gt;adb sideload ROM.zip&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Installer message &lt;code&gt;serving: &#39;ROM.zip&#39;  (~47%)    adb: failed to read command: Success&lt;/code&gt; means that everything is okay.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/LineageOS/comments/dt2et4/adb_failed_to_read_command_success/&quot; target=&quot;_blank&quot;&gt;Reddit - adb: failed to read command: Success&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That&#39;s an ADB issue, nothing is wrong with the device, cable, PC or the installation process.
+If I remember correctly (from a discussion long ago), Google&#39;s ROMs are transferred about 2.2 times across the sideload. To make the progress bar add up to 100%, they said &amp;quot;2.2 times the file size equals 100%&amp;quot;. Our ZIPs are transferred just once, so the final progress is at about 47% with a success. The xfer seems to show the transferred data compared to the file size. Ours clocks in at x1.00 or x1.01, while Google&#39;s is about x2.something.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Reboot to the system&lt;/li&gt;
+&lt;li&gt;Install the &lt;a href=&quot;https://magisk.me/apk/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Magisk&lt;/strong&gt;&lt;/a&gt; app&lt;/li&gt;
+&lt;li&gt;Reboot to recovery again, and install &lt;a href=&quot;https://magisk.me/zip/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Magisk&lt;/strong&gt;&lt;/a&gt; zip&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;adb reboot recovery
+adb sideload Magisk.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Reboot to the system&lt;/li&gt;
+&lt;li&gt;Check &lt;strong&gt;SafetyNet&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </entry>
+  
+</feed>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalii&#39;s Personal Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="/assets/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="site_header">
+    <div>
+        <a class="site_link" href="/">Vitalii&#39;s Personal Website</a>
+    </div>
+    
+        <nav class="site_navigation">
+            <ul>
+                
+                    
+                    
+
+                    
+
+                    
+
+                    <li>
+                        <a href="/about"  >About</a>
+                    </li>
+                
+                    
+                    
+
+                    
+                        
+                    
+
+                    
+
+                    <li>
+                        <a href="/feed.xml"  target="_blank" rel="noopener noreferrer">RSS</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    
+</header>
+
+    <main>
+        <article>
+    <div class="title">
+        <h1>How to update the custom Android ROM</h1>
+    </div>
+    <div class="meta">
+        July 10, 2022
+    </div>
+    <div class="meta">
+        
+            
+            <div class="tag">
+                <a href="/tags/android/">#android</a>
+            </div>
+        
+            
+            <div class="tag">
+                <a href="/tags/adb/">#adb</a>
+            </div>
+        
+    </div>
+    <div class="artical-body">
+        <div class="content">
+            <ol>
+<li>Download the ROM zip file on a computer</li>
+<li>Connect the phone to the computer, reboot to recovery, and install the ROM</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">adb devices<br>adb <span class="token function">reboot</span> recovery<br>adb sideload ROM.zip</code></pre>
+<p>Installer message <code>serving: 'ROM.zip'  (~47%)    adb: failed to read command: Success</code> means that everything is okay.</p>
+<p><a href="https://www.reddit.com/r/LineageOS/comments/dt2et4/adb_failed_to_read_command_success/" target="_blank">Reddit - adb: failed to read command: Success</a></p>
+<blockquote>
+<p>That's an ADB issue, nothing is wrong with the device, cable, PC or the installation process.
+If I remember correctly (from a discussion long ago), Google's ROMs are transferred about 2.2 times across the sideload. To make the progress bar add up to 100%, they said &quot;2.2 times the file size equals 100%&quot;. Our ZIPs are transferred just once, so the final progress is at about 47% with a success. The xfer seems to show the transferred data compared to the file size. Ours clocks in at x1.00 or x1.01, while Google's is about x2.something.</p>
+</blockquote>
+<ol start="3">
+<li>Reboot to the system</li>
+<li>Install the <a href="https://magisk.me/apk/" target="_blank"><strong>Magisk</strong></a> app</li>
+<li>Reboot to recovery again, and install <a href="https://magisk.me/zip/" target="_blank"><strong>Magisk</strong></a> zip</li>
+</ol>
+<pre><code>adb reboot recovery
+adb sideload Magisk.zip
+</code></pre>
+<ol start="6">
+<li>Reboot to the system</li>
+<li>Check <strong>SafetyNet</strong></li>
+</ol>
+
+        </div>
+    </div>
+</article>
+
+    </main>
+    <footer>
+    <p>&copy; 2022 Vitalii Makarchenkov</p>
+</footer>
+
+</body>
+</html>
