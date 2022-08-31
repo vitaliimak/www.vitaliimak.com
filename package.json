@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "post": "./tools/create-post.sh",
     "serve": "npm run dev:assets & npm run dev:site",
     "dev:assets": "env ELEVENTY_ENV=development webpack --mode development --watch",
     "dev:site": "env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
