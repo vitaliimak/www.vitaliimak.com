@@ -7,6 +7,7 @@ module.exports = function(config) {
   config.addPlugin(syntaxHighlight);
 
   config.addPassthroughCopy({ 'src/images': 'images' });
+  config.addPassthroughCopy('src/CNAME');
 
   const md = markdownIt();
   const defaultRender = md.renderer.rules?.link_open || function(tokens, idx, options, env, self) {
