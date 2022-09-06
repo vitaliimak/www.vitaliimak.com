@@ -23,7 +23,7 @@ Installer message `serving: 'ROM.zip'  (~47%)    adb: failed to read command: Su
 3. Reboot to the system
 4. Install the [**Magisk**](https://magisk.me/apk/) app
 5. Reboot to recovery again, and install [**Magisk**](https://magisk.me/zip/) zip
-```
+```bash
 adb reboot recovery
 adb sideload Magisk.zip
 ```
