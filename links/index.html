@@ -57,35 +57,25 @@
 </header>
 
     <main>
-        <article>
-    <div class="title">
-        <h1>Fix git error &quot;fatal: CRLF would be replaced by LF in FILE&quot;</h1>
-    </div>
-    <div class="meta">
-        July 16, 2022
-    </div>
-    <div class="meta">
-        
+        <section>
+    
+        <ul class="links">
             
-            <div class="tag">
-                <a href="/tags/git/">#git</a>
-            </div>
-        
-    </div>
-    <div class="artical-body">
-        <div class="content">
-            <h2>Error:</h2>
-<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">--all</span><br>fatal: CRLF would be replaced by LF <span class="token keyword">in</span> src/main.c</code></pre>
-<h2>Fix:</h2>
-<ol>
-<li>Remove CR symbol from CRLF</li>
-</ol>
-<pre class="language-bash"><code class="language-bash"><span class="token function">find</span> ./src/*.c <span class="token parameter variable">-exec</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/\r$//'</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> +</code></pre>
-<p>Source: <a href="https://stackoverflow.com/questions/20168639/git-commit-get-fatal-error-fatal-crlf-would-be-replaced-by-lf-in" target="_blank">StackOverflow</a></p>
+                
+                
 
-        </div>
-    </div>
-</article>
+                
+
+                
+
+                <li>
+                    <a href="/cv.pdf"  >Resume</a>
+                    <span>(Last update: 2020-11-21)</span>
+                </li>
+            
+        </ul>
+    
+</section>
 
     </main>
     <footer>
