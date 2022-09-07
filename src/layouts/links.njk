@@ -1,0 +1,26 @@
+---
+layout: base
+---
+<section>
+    {% if site.links %}
+        <ul class="links">
+            {% for link in site.links %}
+                {% set currentAttribute = '' %}
+                {% set externalAttribute = '' %}
+
+                {% if link.external %}
+                    {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+                {% endif %}
+
+                {% if page.url == link.url %}
+                    {% set currentAttribute = 'aria-current="page"' %}
+                {% endif %}
+
+                <li>
+                    <a href="{{ link.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ link.text }}</a>
+                    <span>(Last update: {{ link.date | readableDate }})</span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</section>

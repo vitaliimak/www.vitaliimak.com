@@ -16,6 +16,11 @@ module.exports = {
       external: false
     },
     {
+      text: "Links",
+      url: "/links",
+      external: false
+    },
+    {
       text: "RSS",
       url: "/feed.xml",
       external: true
@@ -44,6 +49,14 @@ module.exports = {
       url: "/feed.xml",
       external: true
     }
+  ],
+  links: [
+    {
+      text: "Resume",
+      url: "/cv.pdf",
+      external: false,
+      date: "2020-11-21",
+    },
   ],
   showFooterAttribution: true
 }
