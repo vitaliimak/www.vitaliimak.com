@@ -1,4 +1,8 @@
 .links li {
   list-style-type: none;
-  display: inline;
+  margin-bottom: 0.5em;
+}
+
+.link-date {
+  font-size: 0.8em;
 }

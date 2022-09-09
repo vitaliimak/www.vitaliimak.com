@@ -18,7 +18,8 @@ layout: base
 
                 <li>
                     <a href="{{ link.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ link.text }}</a>
-                    <span>(Last update: {{ link.date | readableDate }})</span>
+                    <br>
+                    <span class="link-date">Updated: {{ link.date | readableDate }}</span>
                 </li>
             {% endfor %}
         </ul>

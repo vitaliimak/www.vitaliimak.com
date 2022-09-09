@@ -52,10 +52,16 @@ module.exports = {
   ],
   links: [
     {
-      text: "Resume",
-      url: "/cv.pdf",
-      external: false,
-      date: "2020-11-21",
+      text: "Resume (pdf)",
+      url: "/Vitalii Makarchenkov.pdf",
+      external: true,
+      date: new Date("2020-11-21"),
+    },
+    {
+      text: "Resume (docx)",
+      url: "/Vitalii Makarchenkov.docx",
+      external: true,
+      date: new Date("2020-11-21"),
     },
   ],
   showFooterAttribution: true
