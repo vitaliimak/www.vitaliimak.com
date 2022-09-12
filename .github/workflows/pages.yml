@@ -32,14 +32,14 @@ jobs:
           args: >-
             --standalone
             -V geometry:margin=1in
-            --output=public/Vitalii\ Makarchenkov.pdf
+            --output="public/Vitalii Makarchenkov.pdf"
             src/cv.md
       - uses: docker://pandoc/latex:2.19
         with:
           args: >-
             --standalone
             -V geometry:margin=1in
-            --output=public/Vitalii\ Makarchenkov.docx
+            --output="public/Vitalii Makarchenkov.docx"
             src/cv.md
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
