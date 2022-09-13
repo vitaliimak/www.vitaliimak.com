@@ -1,77 +1,73 @@
 ---
-date: 2020-11-21
-author: Vitalii Makarchnkov
+date-meta: 2022-09-13
+author-meta: Vitalii Makarchenkov
 ---
 \pagenumbering{gobble}
 # Vitalii Makarchnkov
 
-Email: [vitalii.mak@gmail.com](mailto://vitalii.mak@gmail.com)
+- [mail@vitaliimak.com](mailto:mail@vitaliimak.com)
+- [+38 (098) 519-65-02](tel:+380985196502)
+- [live:vitalii.mak](tel:live:vitalii.mak)
+- [https://www.linkedin.com/in/vitaliimak](https://www.linkedin.com/in/vitaliimak)
+- [https://github.com/vitaliimak](https://github.com/vitaliimak)
 
-Phone: [+380-98-519-6502](tel://+380-98-519-6502)
+## Experience
 
-Skype: [live:vitalii.mak](skype:live:vitalii.mak)
+### Software Engineer, Team Lead at [SoftServe](https://www.softserveinc.com/) (November 2020 - Present)
 
-[LinkedIn](https://www.linkedin.com/in/vitaliimak)
+A part of a Spillman Flex for [Motorola Solutions](https://www.motorolasolutions.com/). An on-premises public safety software solution designed to meet the needs of police departments, sheriff offices, dispatch centers, correctional facilities, and fire departments across the country.
 
-[GitHub](https://github.com/vitalii-mak)
+- Lead a team of six software and quality engineers
+- Developed the Java application (Java 8 Core, JSP, JUnit 4, Apache Commons, Google Guice, XSLT, etc)
+- Reviewed pull requests and improved the quality assurance processes
+- Maintained the legacy part on Perl 5 and Java 8
+- Followed SAFe Agile Framework and Scrum methodologies
 
-Address: Zdolbuniv, Rivne oblast, Ukraine
+### Front-end Teacher at [Beetroot Academy](https://beetroot.academy/) (February 2022 - April 2022)
 
-## PROFESSIONAL EXPERIENCE:
+- Taught HTML/CSS to a group of ten students
 
-### SoftServe
+### Software Engineer at [WWWest.solutions](https://wwwest.solutions/) (September 2019 – April 2020)
 
-November 2020 - Present
+A number of cross-platform mobile applications for different clients.
 
-### Software Engineer
-- Software development
+- Updated hybrid applications from Ionic 3 to Ionic 4
+- Developed PWA and hybrid applications using Ionic 4, Angular 7 and 8, Firebase and Strapi.io
 
-### WWWest.solutions
+### Software Engineer at [GPO Technologies](https://www.gpo-tech.com/) (November 2018 – June 2019)
 
-September 2019 – April 2020
+[Dimol Smart](https://play.google.com/store/apps/details?id=gpo.dimol.smart.mobile&hl=en) is an Internet of things solution for a multi-purpose heating system. Mobile app on Ionic4. Admin web page on Angular 7 and Nebular. With back-end on Spring (JHipster), MySQL, and RabbitMQ.
+Parcel Manager is an application for automating the work of a small logistics company that is engaged in sending goods from China to the CIS countries.
 
-#### JavaScript Developer [remote](https://google.com)
-- Updating hybrid applications from Ionic 3 to Ionic 4
-- Developing PWA and hybrid applications using Ionic 4, Angular 7 and 8, Firebase and Strapi.io
+- Developed web and hybrid mobile applications using Ionic 3 and 4, Angular 7, Nebular
+- Created REST clients
+- Configured and maintained CI/CD process using CircleCI
 
-### GPO Technologies
+### Chief Engineer at The Brach "Vector" of the PE "Silbud" (June 2012 – November 2018)
 
-November 2018 – June 2019
+- Prepared and maintained executive documentation
+- Controlled over the quality of construction works
+- Developed budget documentation
+- Worked with supervisory authorities and customers
 
-#### JavaScript Developer
-- Developing web and hybrid mobile applications using Ionic 3 and 4, Angular 7, Nebular, MySQL, JHipster and RabbitMQ
-- Setting and maintaining CI/CD process using CircleCI
+## Education
 
-### The Brach "Vector" of the PE "Silbud"
+**Bachelor of Engineering Degree** [National University of Water and Environmental Engineering](https://nuwm.edu.ua/), 2002 - 2006
 
-June 2012 – November 2018
+Industrial and Civil Engineering
 
-#### Chief Engineer
-- Preparation and maintenance of executive documentation.
-- Control over the quality of construction works.
-- Development of budget documentation.
-- Work with supervisory authorities and customers.
+---
 
-## EDUCATION:
+**Development, Design and Architecture of Modern Software Systems based on Object-Oriented Languages** [SoftServe University](https://career.softserveinc.com/en-us/university), February - May 2020
 
-National University of Water and Environmental Engineering
-2002 - 2006 Bachelor's degree in Industrial and Civil Engineering
+**Learning How to Learn: Powerful mental tools to help you master tough subjects** [Coursera](https://www.coursera.org/learn/learning-how-to-learn), January - February 2020
 
-## COURSES:
+**JavaScript Development Fundamentals** [SoftServe University](https://career.softserveinc.com/en-us/university), July - August 2018
 
-### Coursera
-
-January - February 2020 - Learning How to Learn: Powerful mental tools to help you master tough subjects
-
-### SoftServe University
-
-February - May 2020 - Development, Design and Architecture of Modern Software Systems based on Object-Oriented Languages
-
-July - August 2018 - JavaScript Development Fundamentals
-
-## SKILLS AND PROFICIENCIES:
-- Languages: TypeScript, Java, JavaScript/HTML/CSS, Python
-- Frameworks: Angular 2+, Spring, NestJS
-- Tools: Git, Docker, AWS
-- Knowledge: OOP, REST, DevOps, Agile, Linux, Node.js, Mongo, PostgreSQL, Android
-- English: Intermediate
+## Skills and Proficiencies
+- Skilled in Java 8 Core, TypeScript, JavaScript, Python
+- Proficient with Git, Docker, Linux, Vim, Emacs, IntelliJ IDEA, Visual Studio Code
+- Experience with Spring, Angular, AWS, Google Cloud, Microsoft Azure
+- Some knowledge of Node.js, Mongo, PostgreSQL, Android
+- Good understanding of OOP, SOLID, REST, DevOps, Agile
+- English level is an Intermediate
