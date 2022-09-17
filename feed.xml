@@ -4,12 +4,28 @@
   <subtitle></subtitle>
   <link href="https://www.vitaliimak.com/feed.xml" rel="self"/>
   <link href="https://www.vitaliimak.com/"/>
-  <updated>2022-07-16T14:45:24Z</updated>
+  <updated>2022-09-17T00:00:00Z</updated>
   <id>https://www.vitaliimak.com</id>
   <author>
     <name>Vitalii Makarchenkov</name>
     <email>mail@vitaliimak.com</email>
   </author>
+    <entry>
+      <title>Nextcloud</title>
+      <link href="/posts/nextcloud/"/>
+      <updated>2022-09-17T00:00:00Z</updated>
+      <id>/posts/nextcloud/</id>
+      <content xml:lang="en" type="html">&lt;h2&gt;Endless External Storage synchronization&lt;/h2&gt;
+&lt;p&gt;The Nextcloud client uploads the local folder to the server many times without any local or remote changes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt; Change the &amp;quot;Check for changes&amp;quot; option on the External Storage configuration to &amp;quot;Never&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/nextcloud-external-storage.png&quot; alt=&quot;Nextcloud External Storage configuration&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Impossible to synchronize large files&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Add configuration options to the &lt;code&gt;/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data/.user.ini&lt;/code&gt; file&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Other options&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;upload_max_filesize&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;post_max_size&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;memory_limit&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1G&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+  
     <entry>
       <title>Fix git error &quot;fatal: CRLF would be replaced by LF in FILE&quot;</title>
       <link href="/posts/fix-git-error-fatal-crlf-would-be-replaced-by-lf-in-file/"/>
