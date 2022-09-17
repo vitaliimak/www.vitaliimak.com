@@ -84,8 +84,7 @@
 <p><strong>Fix:</strong> Change the &quot;Check for changes&quot; option on the External Storage configuration to &quot;Never&quot;.</p>
 <p><img src="/images/posts/nextcloud-external-storage.png" alt="Nextcloud External Storage configuration"></p>
 <h2>Impossible to synchronize large files</h2>
-<p><strong>Fix:</strong></p>
-<p>Add configuration options to the <code>/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data/.user.ini</code> file</p>
+<p><strong>Fix:</strong> Add configuration options to the <code>/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data/.user.ini</code> file</p>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># Other options</span><br><span class="token assign-left variable">upload_max_filesize</span><span class="token operator">=</span>10G<br><span class="token assign-left variable">post_max_size</span><span class="token operator">=</span>10G<br><span class="token assign-left variable">memory_limit</span><span class="token operator">=</span>1G</code></pre>
 
         </div>

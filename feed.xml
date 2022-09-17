@@ -20,8 +20,7 @@
 &lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt; Change the &amp;quot;Check for changes&amp;quot; option on the External Storage configuration to &amp;quot;Never&amp;quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/posts/nextcloud-external-storage.png&quot; alt=&quot;Nextcloud External Storage configuration&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Impossible to synchronize large files&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Add configuration options to the &lt;code&gt;/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data/.user.ini&lt;/code&gt; file&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt; Add configuration options to the &lt;code&gt;/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data/.user.ini&lt;/code&gt; file&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Other options&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;upload_max_filesize&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;post_max_size&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;memory_limit&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1G&lt;/code&gt;&lt;/pre&gt;
 </content>
     </entry>
