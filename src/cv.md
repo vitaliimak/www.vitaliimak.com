@@ -3,7 +3,7 @@ date-meta: 2022-09-13
 author-meta: Vitalii Makarchenkov
 ---
 \pagenumbering{gobble}
-# Vitalii Makarchnkov
+# Vitalii Makarchenkov
 
 - [mail@vitaliimak.com](mailto:mail@vitaliimak.com)
 - [+38 (098) 519-65-02](tel:+380985196502)
@@ -18,6 +18,7 @@ author-meta: Vitalii Makarchenkov
 A part of a Spillman Flex for [Motorola Solutions](https://www.motorolasolutions.com/). An on-premises public safety software solution designed to meet the needs of police departments, sheriff offices, dispatch centers, correctional facilities, and fire departments across the country.
 
 - Lead a team of six software and quality engineers
+- Onboard new team members
 - Developed the Java application (Java 8 Core, JSP, JUnit 4, Apache Commons, Google Guice, XSLT, etc)
 - Reviewed pull requests and improved the quality assurance processes
 - Maintained the legacy part on Perl 5 and Java 8
