@@ -1,5 +1,5 @@
 ---
-date-meta: 2022-09-13
+date-meta: 2022-09-21
 author-meta: Vitalii Makarchenkov
 ---
 \pagenumbering{gobble}
@@ -15,7 +15,10 @@ author-meta: Vitalii Makarchenkov
 
 ### Software Engineer, Team Lead at [SoftServe](https://www.softserveinc.com/) (November 2020 - Present)
 
-A part of a Spillman Flex for [Motorola Solutions](https://www.motorolasolutions.com/). An on-premises public safety software solution designed to meet the needs of police departments, sheriff offices, dispatch centers, correctional facilities, and fire departments across the country.
+Developed and maintained an on-premises software solution in the public safety sphere for the US customer. Developed front and back-end parts of the application.
+Supported team members and colleagues from other teams with setting up a development environment. Documented this process that decreased the time people spend on project onboarding.
+Figured out how the legacy application version worked. Documented and shared this knowledge with the team.
+Created a prototype of the new revolution version of the product on Electron.
 
 - Lead a team of six software and quality engineers
 - Onboard new team members
@@ -23,6 +26,7 @@ A part of a Spillman Flex for [Motorola Solutions](https://www.motorolasolutions
 - Reviewed pull requests and improved the quality assurance processes
 - Maintained the legacy part on Perl 5 and Java 8
 - Followed SAFe Agile Framework and Scrum methodologies
+- Communicated with the stakeholders
 
 ### Front-end Teacher at [Beetroot Academy](https://beetroot.academy/) (February 2022 - April 2022)
 
@@ -30,15 +34,14 @@ A part of a Spillman Flex for [Motorola Solutions](https://www.motorolasolutions
 
 ### Software Engineer at [WWWest.solutions](https://wwwest.solutions/) (September 2019 – April 2020)
 
-A number of cross-platform mobile applications for different clients.
+Developed several cross-platform mobile applications for different clients.
 
 - Updated hybrid applications from Ionic 3 to Ionic 4
 - Developed PWA and hybrid applications using Ionic 4, Angular 7 and 8, Firebase and Strapi.io
 
 ### Software Engineer at [GPO Technologies](https://www.gpo-tech.com/) (November 2018 – June 2019)
-
-[Dimol Smart](https://play.google.com/store/apps/details?id=gpo.dimol.smart.mobile&hl=en) is an Internet of things solution for a multi-purpose heating system. Mobile app on Ionic4. Admin web page on Angular 7 and Nebular. With back-end on Spring (JHipster), MySQL, and RabbitMQ.
-Parcel Manager is an application for automating the work of a small logistics company that is engaged in sending goods from China to the CIS countries.
+Designed and developed the Internet of things solution for a multi-purpose heating system from scratch. I was responsible for developing the Mobile app on Ionic4, and the admin web page on Angular 7 and Nebular. Cooperated with the back-end engineers who created the application on Spring (JHipster), MySQL, and RabbitMQ.
+Maintained and developed the Parcel Manager application for automating the work of a small logistics company that was engaged in sending goods from China to the CIS countries.
 
 - Developed web and hybrid mobile applications using Ionic 3 and 4, Angular 7, Nebular
 - Created REST clients
@@ -47,17 +50,13 @@ Parcel Manager is an application for automating the work of a small logistics co
 ### Chief Engineer at The Brach "Vector" of the PE "Silbud" (June 2012 – November 2018)
 
 - Prepared and maintained executive documentation
-- Controlled over the quality of construction works
+- Controlled the quality of construction works
 - Developed budget documentation
 - Worked with supervisory authorities and customers
 
 ## Education
 
-**Bachelor of Engineering Degree** [National University of Water and Environmental Engineering](https://nuwm.edu.ua/), 2002 - 2006
-
-Industrial and Civil Engineering
-
----
+**Bachelor's degree in Industrial and Civil Engineering** [National University of Water and Environmental Engineering](https://nuwm.edu.ua/), 2002 - 2006
 
 **Development, Design and Architecture of Modern Software Systems based on Object-Oriented Languages** [SoftServe University](https://career.softserveinc.com/en-us/university), February - May 2020
 
@@ -66,9 +65,8 @@ Industrial and Civil Engineering
 **JavaScript Development Fundamentals** [SoftServe University](https://career.softserveinc.com/en-us/university), July - August 2018
 
 ## Skills and Proficiencies
-- Skilled in Java 8 Core, TypeScript, JavaScript, Python
+- Skilled in Java 8 Core, TypeScript, JavaScript
 - Proficient with Git, Docker, Linux, Vim, Emacs, IntelliJ IDEA, Visual Studio Code
-- Experience with Spring, Angular, AWS, Google Cloud, Microsoft Azure
-- Some knowledge of Node.js, Mongo, PostgreSQL, Android
+- Experience with Spring, Angular, AWS, Google Cloud, GitHub Actions
 - Good understanding of OOP, SOLID, REST, DevOps, Agile
 - English level is an Intermediate
