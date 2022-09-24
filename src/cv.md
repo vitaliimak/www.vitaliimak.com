@@ -1,5 +1,5 @@
 ---
-date-meta: 2022-09-21
+date-meta: 2022-09-24
 author-meta: Vitalii Makarchenkov
 ---
 \pagenumbering{gobble}
@@ -21,7 +21,7 @@ Figured out how the legacy application version worked. Documented and shared thi
 Created a prototype of the new revolution version of the product on Electron.
 
 - Lead a team of six software and quality engineers
-- Onboard new team members
+- Interviewed and onboard new team members
 - Developed the Java application (Java 8 Core, JSP, JUnit 4, Apache Commons, Google Guice, XSLT, etc)
 - Reviewed pull requests and improved the quality assurance processes
 - Maintained the legacy part on Perl 5 and Java 8
@@ -41,7 +41,7 @@ Developed several cross-platform mobile applications for different clients.
 
 ### Software Engineer at [GPO Technologies](https://www.gpo-tech.com/) (November 2018 – June 2019)
 Designed and developed the Internet of things solution for a multi-purpose heating system from scratch. I was responsible for developing the Mobile app on Ionic4, and the admin web page on Angular 7 and Nebular. Cooperated with the back-end engineers who created the application on Spring (JHipster), MySQL, and RabbitMQ.
-Maintained and developed the Parcel Manager application for automating the work of a small logistics company that was engaged in sending goods from China to the CIS countries.
+Maintained and developed the application for automating the work of a small logistics company that was engaged in sending goods from China to the CIS countries.
 
 - Developed web and hybrid mobile applications using Ionic 3 and 4, Angular 7, Nebular
 - Created REST clients
