@@ -27,7 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy": "1.0.2",
     "@11ty/eleventy-plugin-rss": "1.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "4.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "4.2.0",
     "autoprefixer": "10.4.13",
     "css-loader": "6.7.1",
     "cssnano": "5.1.14",
