@@ -52,6 +52,31 @@ module.exports = {
   ],
   links: [
     {
+      text: "Twitter",
+      url: "https://twitter.com/vitalii_mak",
+      external: true,
+    },
+    {
+      text: "Telegram",
+      url: "https://t.me/vitaliimak",
+      external: true,
+    },
+    {
+      text: "Facebook",
+      url: "https://www.facebook.com/mak.vitalii",
+      external: true,
+    },
+    {
+      text: "LinkedIn",
+      url: "https://www.linkedin.com/in/vitaliimak",
+      external: true,
+    },
+    {
+      text: "Email",
+      url: "mailto:mail@vitaliimak.com",
+      external: true,
+    },
+    {
       text: "Resume (pdf)",
       url: "/Vitalii Makarchenkov.pdf",
       external: true,
