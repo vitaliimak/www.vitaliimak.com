@@ -77,6 +77,16 @@ module.exports = {
       external: true,
     },
     {
+      text: "GitHub",
+      url: "https://github.com/vitaliimak",
+      external: true,
+    },
+    {
+      text: "LeetCode",
+      url: "https://leetcode.com/vitalii-mak/",
+      external: true,
+    },
+    {
       text: "Resume (pdf)",
       url: "/Vitalii Makarchenkov.pdf",
       external: true,
