@@ -90,13 +90,13 @@ module.exports = {
       text: "Resume (pdf)",
       url: "/Vitalii Makarchenkov.pdf",
       external: true,
-      date: new Date("2022-09-24"),
+      date: new Date("2023-08-03"),
     },
     {
       text: "Resume (docx)",
       url: "/Vitalii Makarchenkov.docx",
       external: true,
-      date: new Date("2022-09-24"),
+      date: new Date("2023-08-03"),
     },
   ],
   showFooterAttribution: true
