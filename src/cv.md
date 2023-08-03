@@ -13,7 +13,9 @@ author-meta: Vitalii Makarchenkov
 
 ## Experience
 
-### Software Engineer at [SoftServe](https://www.softserveinc.com/) (January 2023 - Present)
+### Software Engineer, Team Lead at [SoftServe](https://www.softserveinc.com/) (November 2020 - Present)
+
+#### January 2023 - Present
 
 Worked on the leading database automation and integration tool. Maintained the testing framework.
 
@@ -22,7 +24,7 @@ Worked on the leading database automation and integration tool. Maintained the t
 - Refactored core system components
 - Reviewed pull requests
 
-### Software Engineer, Team Lead at [SoftServe](https://www.softserveinc.com/) (November 2020 - December 2022)
+#### November 2020 - December 2022
 
 Developed, improved, and maintained an on-premises software solution in the public safety sphere for the US customer. Developed front and back-end parts of the application.
 Supported team members and colleagues from other teams with setting up a development environment. Documented this process that decreased the time people spend on project onboarding.
