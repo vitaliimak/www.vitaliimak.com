@@ -83,7 +83,9 @@
 <li>Download the ROM zip file on a computer</li>
 <li>Connect the phone to the computer, reboot to recovery, and install the ROM</li>
 </ol>
-<pre class="language-bash"><code class="language-bash">adb devices<br>adb <span class="token function">reboot</span> recovery<br>adb sideload ROM.zip</code></pre>
+<pre class="language-bash"><code class="language-bash">adb devices
+adb <span class="token function">reboot</span> recovery
+adb sideload ROM.zip</code></pre>
 <p>Installer message <code>serving: 'ROM.zip'  (~47%)    adb: failed to read command: Success</code> means that everything is okay.</p>
 <p><a href="https://www.reddit.com/r/LineageOS/comments/dt2et4/adb_failed_to_read_command_success/" target="_blank">Reddit - adb: failed to read command: Success</a></p>
 <blockquote>
@@ -95,7 +97,8 @@ If I remember correctly (from a discussion long ago), Google's ROMs are transfer
 <li>Install the <a href="https://magisk.me/apk/" target="_blank"><strong>Magisk</strong></a> app</li>
 <li>Reboot to recovery again, and install <a href="https://magisk.me/zip/" target="_blank"><strong>Magisk</strong></a> zip</li>
 </ol>
-<pre class="language-bash"><code class="language-bash">adb <span class="token function">reboot</span> recovery<br>adb sideload Magisk.zip</code></pre>
+<pre class="language-bash"><code class="language-bash">adb <span class="token function">reboot</span> recovery
+adb sideload Magisk.zip</code></pre>
 <ol start="6">
 <li>Reboot to the system</li>
 <li>Check <strong>SafetyNet</strong></li>

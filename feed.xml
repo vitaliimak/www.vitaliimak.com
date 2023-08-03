@@ -21,7 +21,10 @@
 &lt;p&gt;&lt;img src=&quot;/images/posts/nextcloud-external-storage.png&quot; alt=&quot;Nextcloud External Storage configuration&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Impossible to synchronize large files&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt; Add configuration options to the &lt;code&gt;/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data/.user.ini&lt;/code&gt; file&lt;/p&gt;
-&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Other options&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;upload_max_filesize&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;post_max_size&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G&lt;br /&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;memory_limit&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1G&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Other options&lt;/span&gt;
+&lt;span class=&quot;token assign-left variable&quot;&gt;upload_max_filesize&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G
+&lt;span class=&quot;token assign-left variable&quot;&gt;post_max_size&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10G
+&lt;span class=&quot;token assign-left variable&quot;&gt;memory_limit&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1G&lt;/code&gt;&lt;/pre&gt;
 </content>
     </entry>
   
@@ -31,12 +34,13 @@
       <updated>2022-07-16T14:45:24Z</updated>
       <id>/posts/fix-git-error-fatal-crlf-would-be-replaced-by-lf-in-file/</id>
       <content xml:lang="en" type="html">&lt;h2&gt;Error:&lt;/h2&gt;
-&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--all&lt;/span&gt;&lt;br /&gt;fatal: CRLF would be replaced by LF &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; src/main.c&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--all&lt;/span&gt;
+fatal: CRLF would be replaced by LF &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; src/main.c&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Fix:&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Remove CR symbol from CRLF&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; ./src/*.c &lt;span class=&quot;token parameter variable&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;s/\r$//&#39;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; +&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; ./src/*.c &lt;span class=&quot;token parameter variable&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;s/&#92;r$//&#39;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; +&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Source: &lt;a href=&quot;https://stackoverflow.com/questions/20168639/git-commit-get-fatal-error-fatal-crlf-would-be-replaced-by-lf-in&quot; target=&quot;_blank&quot;&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
 </content>
     </entry>
@@ -50,7 +54,9 @@
 &lt;li&gt;Download the ROM zip file on a computer&lt;/li&gt;
 &lt;li&gt;Connect the phone to the computer, reboot to recovery, and install the ROM&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;adb devices&lt;br /&gt;adb &lt;span class=&quot;token function&quot;&gt;reboot&lt;/span&gt; recovery&lt;br /&gt;adb sideload ROM.zip&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;adb devices
+adb &lt;span class=&quot;token function&quot;&gt;reboot&lt;/span&gt; recovery
+adb sideload ROM.zip&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Installer message &lt;code&gt;serving: &#39;ROM.zip&#39;  (~47%)    adb: failed to read command: Success&lt;/code&gt; means that everything is okay.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/LineageOS/comments/dt2et4/adb_failed_to_read_command_success/&quot; target=&quot;_blank&quot;&gt;Reddit - adb: failed to read command: Success&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -62,7 +68,8 @@ If I remember correctly (from a discussion long ago), Google&#39;s ROMs are tran
 &lt;li&gt;Install the &lt;a href=&quot;https://magisk.me/apk/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Magisk&lt;/strong&gt;&lt;/a&gt; app&lt;/li&gt;
 &lt;li&gt;Reboot to recovery again, and install &lt;a href=&quot;https://magisk.me/zip/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Magisk&lt;/strong&gt;&lt;/a&gt; zip&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;adb &lt;span class=&quot;token function&quot;&gt;reboot&lt;/span&gt; recovery&lt;br /&gt;adb sideload Magisk.zip&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;adb &lt;span class=&quot;token function&quot;&gt;reboot&lt;/span&gt; recovery
+adb sideload Magisk.zip&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&quot;6&quot;&gt;
 &lt;li&gt;Reboot to the system&lt;/li&gt;
 &lt;li&gt;Check &lt;strong&gt;SafetyNet&lt;/strong&gt;&lt;/li&gt;
