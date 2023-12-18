@@ -30,7 +30,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
     "autoprefixer": "10.4.16",
     "css-loader": "6.8.1",
-    "cssnano": "6.0.1",
+    "cssnano": "6.0.2",
     "mini-css-extract-plugin": "2.7.6",
     "postcss": "8.4.32",
     "postcss-loader": "7.3.3",
